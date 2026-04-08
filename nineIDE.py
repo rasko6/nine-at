@@ -4,8 +4,6 @@ import sys
 import io
 import os
 
-# ПРОВЕРКА: убедись, что имя файла совпадает! 
-# Если твой файл называется pycompiler.py, напиши: import pycompiler as ninecompiler
 try:
     import ninecompiler 
 except ImportError:
@@ -78,10 +76,9 @@ code_area = tk.Text(root, font=("Consolas", 13), bg="#141414", fg="#f0f0f0",
                     insertbackground="#ff4d4d", undo=True, bd=0, padx=15, pady=15)
 code_area.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
-# ИСПРАВЛЕНО: Цвет заменен на HEX (6 знаков)
 code_area.tag_config("header", foreground="#ff3333", font=("Consolas", 13, "bold")) 
 code_area.tag_config("kw", foreground="#ff6666")     
-code_area.tag_config("comment", foreground="#5e5e5e") # Обычный серый HEX
+code_area.tag_config("comment", foreground="#5e5e5e") 
 
 code_area.bind("<KeyRelease>", highlight_syntax)
 
