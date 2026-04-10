@@ -1,6 +1,0 @@
-﻿nine@
-print Генерирую_число...
-wait 1
-random 1,10
-var x = res
-print x
