@@ -1,0 +1,120 @@
+----------nine@ documentation----------
+0. DEFINITIONS
+nine@ (pronounced nine-at) is a simple small block-based language.
+ninecompiler.py is a compiler made for running .nin files.
+.nin files are nine@ files.
+---------------------------------------
+
+1. START
+every .nin file should start with "nine@". 
+output from ninecompiler.py:
+
+-------------------------
+-------------------------
+--- Execution Finished ---
+Press Enter...
+
+Here, we can see that the code is working.
+---------------------------------------
+
+2. VARIABLES
+created via "var var name = value".
+example 1: var a = 1
+example 2: var b = hello_world
+---------------------------------------
+
+3. PRINT & INPUT
+"print" shows text or variable value.
+"input" asks user for data and saves it to a variable.
+example:
+print enter your name
+input name
+print name
+
+output from ninecompiler.py:
+
+-------------------------
+enter your name
+[name] > hello
+hello
+-------------------------
+--- Execution Finished ---
+Press Enter...
+
+-------------------------
+
+4. MATH (CALC)
+use "calc" for calculation. The result is always saved in a special variable called "res".
+To update your variable, use "var x = res".
+example:
+var x = 10
+calc x + 5
+var x = res
+print x
+
+output from ninecompiler.py:
+
+-------------------------
+Result: 15
+-------------------------
+--- Execution Finished ---
+Press Enter...
+
+-------------------------
+
+5. BLOCKS AND TABS ( { } )
+Use curly brackets to group your code. You can use Tabs or spaces to make it look clean.
+example:
+if x == 10 {
+print its ten!
+calc x * 2
+}
+
+-------------------------
+
+6. IF AND ELSE
+"if" runs code only if something is true.
+"else" runs only if the "if" before it failed.
+example:
+if x > 5 {
+print high
+}
+else {
+print low
+}
+
+-------------------------
+
+7. LOOPS
+"while" repeats the code block as long as the condition is true.
+example:
+var x = 1
+while x < 5 {
+print x
+calc x + 1
+var x = res
+}
+
+------------------------
+
+8. RANDOM
+"random" creates a random number.
+example:
+random 1,10
+
+------------------------
+
+9.
+"wait" waits.
+example:
+wait 1
+
+NOTE: the code above makes the program wait 1 second.
+------------------------
+
+10. SYSTEM COMMANDS
+"cls" - clears the console screen.
+"exit" - closes the program immediately.
+"//" - use this at the start of a line for comments (compiler ignores them).
+
+------------------------
